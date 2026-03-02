@@ -1,0 +1,124 @@
+@import "general-sans.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#FAF8F6] text-black font-sans;
+}
+
+h1 {
+  @apply text-5xl mb-5 font-bold;
+}
+
+h2 {
+  @apply text-4xl font-bold;
+}
+
+h3 {
+  @apply text-3xl font-bold;
+}
+
+h4 {
+  @apply text-2xl font-bold;
+}
+
+h5 {
+  @apply text-xl font-bold;
+}
+
+h6 {
+  @apply text-lg font-bold;
+}
+
+.body1 {
+  @apply text-base font-normal;
+}
+
+.body2 {
+  @apply text-tiny font-normal;
+}
+
+.subtitle1 {
+  @apply text-base font-bold;
+}
+
+.subtitle2 {
+  @apply text-sm font-bold;
+}
+
+.caption1 {
+  @apply text-sm font-normal;
+}
+
+.caption2 {
+  @apply text-sm font-bold italic;
+}
+
+.footnote {
+  @apply text-sm font-normal;
+}
+
+p {
+  @apply text-base font-normal mb-5;
+}
+
+.section-about {
+  @apply grid justify-between grid-cols-2 gap-x-5;
+  grid-template-columns: 4.5fr 1fr;
+}
+
+.home-top-card {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(/osa_cover.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-background {
+  background-image: url(/images/footer-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 340px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide-2 {
+  width: 800px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .section-about {
+    @apply flex flex-col-reverse gap-4;
+  }
+
+  .osa-logo {
+    @apply w-[30%];
+  }
+
+  .swiper-slide {
+    width: 280px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    @apply rounded-2xl aspect-[16/9] w-full object-cover object-center;
+  }
+}
