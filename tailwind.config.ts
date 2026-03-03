@@ -72,6 +72,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['GeneralSans-Variable', 'sans-serif'],
+        display: ['Knewave', 'cursive'],
       },
     },
   },

@@ -7,14 +7,14 @@ import { CustomButton } from "@components/Button";
 
 export default function Home() {
   return (
-    <main className={`translate-y-[-75px] flex flex-col space-y-32`}>
+    <div className={`translate-y-[-78px] flex flex-col space-y-32`}>
       <section className="home-top-card flex flex-col justify-center items-center h-[100dvh]">
-        <div className="max-w-screen-xl mx-auto flex flex-col items-center px-14 py-24">
+        <div className="max-w-screen-xl mx-auto flex flex-col items-center py-24">
           <div className="flex flex-col items-center gap-4">
-            <h1 className="leading-none text-center font-semibold text-[5rem]">
+            <h1 className="leading-[1.1] text-center font-semibold text-[6rem]">
               We are
               <br />
-              OISP Student Ambassadors
+              OISP Student Ambassadors!
             </h1>
             <p className="text-xl">
               Connecting cultures, inspiring leadership, and empowering the
@@ -88,6 +88,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

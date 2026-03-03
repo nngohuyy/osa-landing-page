@@ -4,14 +4,16 @@ import './globals.css';
 import 'primeicons/primeicons.css';
 
 import { HeroUIProvider } from "@heroui/react";
-import { Manrope } from 'next/font/google';
+import { Knewave } from 'next/font/google';
 
 import NavBar from "@components/NavBar/navbar";
 import Footer from "@components/Footer/footer";
 
-const manrope = Manrope({
+const knewave = Knewave({
+  weight: '400',
   subsets: ['latin'],
   display: 'swap',
+  variable: '--font-knewave',
 })
 
 export default function RootLayout({
@@ -20,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={``}>
+    <html lang="en" className={knewave.variable}>
+      <body>
         <HeroUIProvider>
           <NavBar />
           <main>

@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+'use client';
 
 import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
 
@@ -6,21 +6,16 @@ import { CustomButton } from "@components/Button";
 import { LEADERS_EXECS } from "@constants/leader_execs";
 import { MotionBlogCard } from "@components/MotionCard";
 
-export const metadata: Metadata = {
-  title: "OSA | About us",
-  description: "OSA's page with information about upcoming events and activities.",
-};
-
 export default function AboutUsPage() {
   return (
-    <main className="translate-y-[-75px] mt-60 mb-4">
+    <div className="translate-y-[-75px] mt-60 mb-4">
       <div className="max-w-screen-xl mx-auto px-14">
         <p className="text-black font-semibold">About us</p>
-        <h1 className="font-semibold leading-[1.1]">
+        <h1 className="font-semibold font-sans leading-[1.1]">
           Building Community<br />Bridging Opportunities
         </h1>
       </div>
-      <div className="bg-[url('/images/about_us_bg_1.jpg')] bg-cover bg-no-repeat bg-center bg-fixed h-dvh mt-10">
+      <section className="bg-[url('/images/about_us_bg_1.jpg')] bg-cover bg-no-repeat bg-center bg-fixed h-dvh mt-10">
         <div className="max-w-screen-xl mx-auto px-14 h-full flex items-center justify-end">
           <div className="text-black bg-white w-96 py-10 px-8 rounded-3xl">
             <h5 className="font-semibold mb-2">Our Stories</h5>
@@ -35,9 +30,9 @@ export default function AboutUsPage() {
             </CustomButton>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="max-w-screen-xl mx-auto px-14 grid grid-cols-2 gap-10 mt-32">
+      <section className="max-w-screen-xl mx-auto px-14 grid grid-cols-2 gap-10 mt-32">
         <h2 className="font-semibold leading-[1.1]">We do this<br />for a single cause</h2>
         <div>
           <p>
@@ -59,8 +54,8 @@ export default function AboutUsPage() {
             Read our manifesto
           </CustomButton>
         </div>
-      </div>
-      <div className="max-w-screen-xl mx-auto px-14 flex flex-col gap-12 mt-32">
+      </section>
+      <section className="max-w-screen-xl mx-auto px-14 flex flex-col gap-12 mt-32">
         <h2 className="font-semibold leading-[1.1]">Our mission</h2>
         <div className="grid grid-cols-[1fr_2fr] gap-5">
           <div className="bg-[url('/osa_cover.jpg')] bg-cover bg-no-repeat bg-center h-[22rem]"></div>
@@ -104,8 +99,8 @@ export default function AboutUsPage() {
             </p>
           </div>
         </div>
-      </div>
-      <div className="max-w-screen-xl mx-auto px-14 bg-white py-20 mt-32 rounded-t-3xl">
+      </section>
+      <section className="max-w-screen-xl mx-auto px-14 bg-white py-20 mt-32 rounded-t-3xl">
         <h2 className="font-semibold leading-[1.1]">Welcome our team of<br />Executives and Leaders</h2>
         <div className="grid grid-cols-3 gap-10 mt-10">
           {
@@ -118,7 +113,7 @@ export default function AboutUsPage() {
                     alt="team member"
                     className="object-cover h-[25rem] rounded-xl border-2"
                   />
-                  <h5 className="mt-4 font-medium">{member.last_name + " " + member.first_name}</h5>
+                  <h5 className="mt-4 font-sans font-medium leading-tight">{member.last_name + " " + member.first_name}</h5>
                   <p>{member.position}</p>
                 </div>
               </MotionBlogCard>
@@ -136,14 +131,14 @@ export default function AboutUsPage() {
                     alt="team member"
                     className="object-cover h-[25rem] rounded-xl border-2"
                   />
-                  <h5 className="mt-4 font-medium">{member.last_name + " " + member.first_name}</h5>
+                  <h5 className="mt-4 font-sans font-medium leading-tight">{member.last_name + " " + member.first_name}</h5>
                   <p>{member.position}</p>
                 </div>
               </MotionBlogCard>
             ))
           }
         </div>
-      </div>
+      </section>
       <div className="max-w-screen-xl mx-auto rounded-b-3xl overflow-clip">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -152,6 +147,6 @@ export default function AboutUsPage() {
           className="object-cover h-[40rem]"
         />
       </div>
-    </main>
+    </div>
   )
 }

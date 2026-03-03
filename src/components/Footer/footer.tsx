@@ -6,7 +6,7 @@ const currentYear = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <main className='pb-20'>
+    <footer className='pb-20 pt-[50px]'>
       <div className='max-w-screen-xl text-white footer-background mx-auto px-14 py-20 border-4 border-black rounded-3xl'>
         <div className='flex flex-col gap-6'>
           <div className='flex flex-row justify-between gap-[240px]'>
@@ -53,6 +53,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </main>
+    </footer>
   );
 }

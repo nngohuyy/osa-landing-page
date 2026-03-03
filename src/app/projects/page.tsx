@@ -14,14 +14,14 @@ import { Play } from '@phosphor-icons/react/dist/ssr';
 
 export default function ProjectsPage() {
   return (
-    <main className={`translate-y-[-75px] flex flex-col`}>
-      <div className='h-[50rem] flex flex-col justify-end bg-[url(/eventsPage_cover.jpg)] bg-cover bg-center'>
+    <div className={`translate-y-[-75px] flex flex-col`}>
+      <section className='h-[50rem] flex flex-col justify-end bg-[url(/icf25_hero.jpg)] bg-cover bg-center'>
         <div className='px-14 py-10 h-full bg-black bg-opacity-75 text-white justify-end flex flex-col'>
           <div className='w-[640px] mx-auto flex flex-col items-center gap-5'>
-            <h1 className='leading-none text-6xl mb-3 text-center'>OISP INTERNATIONAL FESTIVAL 2024</h1>
-            <h6 className='text-center font-normal'>
-              {`The OISP International Festival 2024, themed "Luminary," took place on April 6th at the University of Technology in Ho Chi Minh City. This magical event featured traditional costume performances, national item exhibitions, and music festivals, attracting over 400 young people to celebrate and experience diverse cultures.`}
-            </h6>
+            <h1 className='leading-none mb-3 text-center'>INTERNATIONAL CONNECTION FESTIVAL 2025</h1>
+            <p className='text-center font-normal text-lg'>
+              {`International Connection Festival 2025, themed "Into the Harmony," took place on May 10th at Ho Chi Minh City University of Technology, VNU-HCM. This magical event featured traditional costume performances, national item exhibitions, and music festivals, attracting over 500 young people to celebrate and experience diverse cultures.`}
+            </p>
             <Link
               href='https://www.facebook.com/InternationalConnectionFestival/posts/pfbid02tp1FupmXwhJWRb4aZFtvPeeY2EVd64YELXHiNvPHToqvFxEGiSpo5XhocbvSA7f4l'
               target="_blank"
@@ -32,8 +32,8 @@ export default function ProjectsPage() {
             </Link>
           </div>
         </div>
-      </div>
-      <div className='flex flex-col items-center mt-16'>
+      </section>
+      <section className='flex flex-col items-center mt-16'>
         <h1>Our past projects</h1>
         <Swiper
           slidesPerView={'auto'}
@@ -49,16 +49,8 @@ export default function ProjectsPage() {
               />
             </SwiperSlide>
           ))}
-          {EVENTS.eventList.map((event) => (
-            <SwiperSlide key={event.id}>
-              <Card
-                {
-                ...event}
-              />
-            </SwiperSlide>
-          ))}
         </Swiper>
-      </div>
-    </main>
+      </section>
+    </div>
   );
 }

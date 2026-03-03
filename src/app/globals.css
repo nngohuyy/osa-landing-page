@@ -9,27 +9,27 @@ body {
 }
 
 h1 {
-  @apply text-5xl mb-5 font-bold;
+  @apply text-6xl mb-5 font-bold font-display;
 }
 
 h2 {
-  @apply text-4xl font-bold;
+  @apply text-5xl font-bold font-display;
 }
 
 h3 {
-  @apply text-3xl font-bold;
+  @apply text-4xl font-bold font-display;
 }
 
 h4 {
-  @apply text-2xl font-bold;
+  @apply text-3xl font-bold font-display;
 }
 
 h5 {
-  @apply text-xl font-bold;
+  @apply text-2xl font-bold font-display;
 }
 
 h6 {
-  @apply text-lg font-bold;
+  @apply text-xl font-bold font-display;
 }
 
 .body1 {
@@ -62,6 +62,10 @@ h6 {
 
 p {
   @apply text-base font-normal mb-5;
+}
+
+p:last-child {
+  @apply mb-0;
 }
 
 .section-about {

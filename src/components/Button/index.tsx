@@ -22,7 +22,7 @@ export const CustomButton = ({
 }: CustomButtonProps) => {
   return (
     <Button
-      className={`px-6 py-1.5 translate-y-[-2px]
+      className={`px-6 py-1.5 translate-y-[-2px] flex flex-row
         ${backgroundColor} hover:${hoverBackgroundColor}
         rounded-md border-2 border-black
         shadow-solid hover:shadow-none
