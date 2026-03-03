@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 
-import { Button } from "@nextui-org/button";
+import { Button } from "@heroui/react";
 import { EVENTS } from "@constants/eventList";
 import { CardBlog } from "@components/Card/Card";
 import { MotionBlogCard } from "@components/MotionCard";

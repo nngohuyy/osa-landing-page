@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react';
-import { Link, Button } from "@nextui-org/react";
+import { Link, Button } from "@heroui/react";
 import { CustomButton } from "@components/Button";
 
 import { OSALogo } from "@components/OSALogo";

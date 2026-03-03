@@ -3,7 +3,7 @@
 import './globals.css';
 import 'primeicons/primeicons.css';
 
-import { NextUIProvider } from "@nextui-org/react";
+import { HeroUIProvider } from "@heroui/react";
 import { Manrope } from 'next/font/google';
 
 import NavBar from "@components/NavBar/navbar";
@@ -22,13 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={``}>
-        <NextUIProvider>
+        <HeroUIProvider>
           <NavBar />
           <main>
             {children}
           </main>
           <Footer />
-        </NextUIProvider>
+        </HeroUIProvider>
       </body>
     </html>
   )
