@@ -46,9 +46,8 @@ export default function ProjectsPage() {
         <div className="relative flex items-center w-full">
           <Button
             id="prevBtn"
-            radius="full"
             isIconOnly
-            className="rounded-full bg-muted/25 absolute left-6 z-10 p-2"
+            className="rounded-full bg-muted/25 absolute left-6 z-10 p-2 w-16 h-16 flex items-center justify-center"
           >
             <CaretLeft size={48} weight="bold" />
           </Button>
@@ -64,16 +63,15 @@ export default function ProjectsPage() {
             }}
           >
             {EVENTS.eventList.map((event) => (
-              <SwiperSlide key={event.id} className="!h-auto">
+              <SwiperSlide key={event.eventName} className="!h-auto">
                 <Card {...event} />
               </SwiperSlide>
             ))}
           </Swiper>
           <Button
             id="nextBtn"
-            radius="full"
             isIconOnly
-            className="rounded-full bg-muted/25 absolute right-6 z-10 p-2"
+            className="rounded-full bg-muted/25 absolute right-6 z-10 p-2 w-16 h-16 flex items-center justify-center"
           >
             <CaretRight size={48} weight="bold" />
           </Button>

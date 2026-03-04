@@ -29,19 +29,19 @@ export default function ContactUsPage() {
               <div className='flex flex-col sm:grid grid-cols-2 md:flex md:flex-row gap-6 justify-between mt-6 mx-12'>
                 <a href="https://www.facebook.com/oisp.student.ambassadors" className='flex flex-col items-center gap-3 hover:text-slate-600 rounded-xl transition-[0.1s]'>
                   <i className="pi pi-facebook" style={{ fontSize: '3rem' }}></i>
-                  <p className='text-center'>OISP Student<br/>Ambassadors</p>
+                  <p className='text-center leading-tight'>OISP Student<br/>Ambassadors</p>
                 </a>
                 <a href="https://www.instagram.com/osaxoi/" className='flex flex-col items-center gap-3 hover:text-slate-600 rounded-xl transition-[0.1s]'>
                   <i className="pi pi-instagram" style={{ fontSize: '3rem' }}></i>
-                  <p>@osaxoi</p>
+                  <p className='text-center leading-tight'>@osaxoi</p>
                 </a>
                 <a href="https://www.youtube.com/@oispstudentambassadors2015" className='flex flex-col items-center gap-3 hover:text-slate-600 rounded-xl transition-[0.1s]'>
                   <i className="pi pi-youtube" style={{ fontSize: '3rem' }}></i>
-                  <p className='text-center'>OISP Student<br/>Ambassadors</p>
+                  <p className='text-center leading-tight'>OISP Student<br/>Ambassadors</p>
                 </a>
                 <a href="mailto:osa.hcmut@gmail.com" className='flex flex-col items-center gap-3 hover:text-slate-600 rounded-xl transition-[0.1s]'>
                   <i className="pi pi-inbox" style={{ fontSize: '3rem' }}></i>
-                  <p>osa.hcmut@gmail.com</p>
+                  <p className='text-center leading-tight'>osa.hcmut@gmail.com</p>
                 </a>
               </div>
             </div>

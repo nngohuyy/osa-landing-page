@@ -36,7 +36,6 @@ function Card({
       </div>
       <div className="w-full pb-5 px-5 mt-auto">
         <CustomButton
-          size="sm"
           containShadow={false}
           endContent={<ArrowUpRight size={20} weight="bold" />}
           className="w-full bg-white text-black"
@@ -59,15 +58,16 @@ function CardBlog({
     <Link href={url}>
       <main className="group flex flex-col bg-inherit hover:bg-white transition duration-500 ease-in-out rounded-2xl overflow-hidden">
         <div className="h-[240px] w-full rounded-2xl group-hover:rounded-none duration-200 ease-out overflow-hidden items-center justify-center flex">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img className="image" src={eventImage} alt="" />
         </div>
         <div className="group relative">
           <div className="py-5 transition-[padding] duration-200 ease-out group-hover:px-5">
-            <div className="flex flex-col gap-2">
-              <h5 className="font-semibold leading-[1.15] line-clamp-2 overflow-hidden text-ellipsis">
+            <div className="flex flex-col gap-2 mb-2">
+              <h5 className="font-semibold leading-[1.15] font-sans line-clamp-2 overflow-hidden text-ellipsis">
                 {eventName}
               </h5>
-              <p className="body1! leading-none">{eventDate}</p>
+              <p className="leading-none mt-1">{eventDate}</p>
             </div>
             <p className="text-lg line-clamp-2 overflow-hidden text-ellipsis">
               {eventDescription}

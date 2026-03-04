@@ -20,8 +20,8 @@ export default function Footer() {
                 potential employers.
               </p>
               <div>
-                <p className='font-bold'>Follow us on social media!</p>
-                <div className="flex gap-4 mt-2">
+                <p className='font-bold mb-2'>Follow us on social media!</p>
+                <div className="flex gap-4">
                   <a href="https://www.facebook.com/oisp.student.ambassadors" className="text-2xl">
                     <i className="pi pi-facebook text-[2rem] hover:text-[#1877F2]"></i>
                   </a>

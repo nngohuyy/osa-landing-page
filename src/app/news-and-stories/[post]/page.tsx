@@ -9,6 +9,7 @@ export default async function PostPage({ params, }: { params: Promise<{ post: st
   return (
     <div className="translate-y-[-75px] flex flex-col">
       <figure className="h-[70vh] w-full relative">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={event?.eventImage} alt={event?.eventName} className="w-full h-full object-cover" />
       </figure>
       <div className="max-w-screen-xl w-full mx-auto px-6 md:px-14 xl:px-14 flex justify-between items-center pt-6">
@@ -65,7 +66,7 @@ export default async function PostPage({ params, }: { params: Promise<{ post: st
         <h1 className="mb-10">Read more</h1>
         <div className="grid grid-cols-3 gap-10">
             {EVENTS.eventList.slice(0, 3).map((event) => (
-              <CardBlog key={event.id}
+              <CardBlog key={event.eventName}
                 {
                 ...event}
               />

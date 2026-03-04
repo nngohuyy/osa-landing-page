@@ -46,6 +46,7 @@ export const MotionCard = ({ children, customDelay = 0, className }: MotionCardP
 export const MotionBlogCard = ({ children, customDelay = 0, className }: MotionCardProps) => {
   return (
     <motion.div
+      layout
       custom={customDelay}
       variants={cardVariants}
       initial="hidden"
@@ -55,7 +56,9 @@ export const MotionBlogCard = ({ children, customDelay = 0, className }: MotionC
       whileTap={{ scale: 0.95 }}
       className={className}
     >
-      {children}
+      <motion.div layout>
+        {children}
+      </motion.div>
     </motion.div>
   )
 }
