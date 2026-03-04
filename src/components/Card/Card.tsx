@@ -20,12 +20,12 @@ function Card({
   eventName,
 }: CardProps) {
   return (
-    <div className="w-[340px] flex flex-col bg-white rounded-2xl overflow-hidden">
+    <div className="w-[340px] h-full flex flex-col bg-white rounded-2xl overflow-hidden">
       <div className="h-[240px] w-full overflow-hidden items-center justify-center flex">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img className="image" src={eventImage} alt="" />
       </div>
-      <div className="p-5 flex flex-col">
+      <div className="p-5 flex flex-col flex-1">
         <div className="flex flex-col gap-2 mb-4">
           <h6 className="leading-[1.15] text-lg font-sans font-semibold">
             {eventName}
@@ -34,13 +34,14 @@ function Card({
         </div>
         <p className="!body2">{eventDescription}</p>
       </div>
-      <div className="w-full pb-5 px-5">
+      <div className="w-full pb-5 px-5 mt-auto">
         <CustomButton
           size="sm"
+          containShadow={false}
           endContent={<ArrowUpRight size={20} weight="bold" />}
           className="w-full bg-white text-black"
         >
-          Learn more
+          Watch the recap
         </CustomButton>
       </div>
     </div>

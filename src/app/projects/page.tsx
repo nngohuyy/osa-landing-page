@@ -64,7 +64,7 @@ export default function ProjectsPage() {
             }}
           >
             {EVENTS.eventList.map((event) => (
-              <SwiperSlide key={event.id}>
+              <SwiperSlide key={event.id} className="!h-auto">
                 <Card {...event} />
               </SwiperSlide>
             ))}

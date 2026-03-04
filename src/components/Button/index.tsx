@@ -7,8 +7,9 @@ interface CustomButtonProps {
   textColor?: string;
   backgroundColor?: string;
   hoverBackgroundColor?: string;
-  startContent?: React.ReactNode
-  endContent?: React.ReactNode
+  startContent?: React.ReactNode;
+  endContent?: React.ReactNode;
+  containShadow?: boolean;
 }
 
 export const CustomButton = ({
@@ -18,16 +19,17 @@ export const CustomButton = ({
   textColor = "text-white",
   backgroundColor = "bg-[#35589F]",
   hoverBackgroundColor = "bg-[#3B6CB4]",
-  startContent, endContent,
+  startContent,
+  endContent,
+  containShadow = true,
 }: CustomButtonProps) => {
   return (
     <Button
       className={`px-6 py-1.5 translate-y-[-2px] flex flex-row
         ${backgroundColor} hover:${hoverBackgroundColor}
         rounded-md border-2 border-black
-        shadow-solid hover:shadow-none
         font-bold ${textColor}
-        ease-out hover:translate-y-[0px] duration-[0.15s]
+        ${containShadow ? "shadow-solid hover:shadow-none ease-out hover:translate-y-[0px] duration-[0.15s]" : ""}
         ${className}`}
       size={size}
       startContent={startContent}
