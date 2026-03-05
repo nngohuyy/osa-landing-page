@@ -29,10 +29,10 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-5">
           <h1 className="home-section-heading text-center md:text-left leading-none">Our mission</h1>
           <div>
-            <p className="text-center md:text-left text-lg md:text-xl leading-snug">
+            <p className="text-center md:text-left md:text-lg lg:text-xl leading-snug">
               {DESCRIPTION.about_us_long}
             </p>
-            <p className="text-center md:text-left text-lg md:text-xl leading-snug">
+            <p className="text-center md:text-left md:text-lg lg:text-xl leading-snug">
               {DESCRIPTION.about_us_short}
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function Home() {
         </div>
         <div className="md:w-1/2">
           <h1 className="home-section-heading text-center md:text-left leading-none">Our statement</h1>
-          <p className="text-center md:text-left text-lg leading-snug">
+          <p className="text-center md:text-left md:text-lg leading-snug">
             {DESCRIPTION.statement}
           </p>
         </div>
